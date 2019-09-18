@@ -83,8 +83,8 @@ h6 {
   transition: all 0.2s;
   -webkit-transform: scale(1.05);
   transform: scale(1.05);
-  -webkit-box-shadow: 0px 20px 45px #022b6f;
-  box-shadow: 0px 20px 45px #022b6f;
+  -webkit-box-shadow: 0px 20px 45px #77902a;
+  box-shadow: 0px 20px 45px #77902a;
 }
 
 .card:hover:not(.active) .card__header-btn {
@@ -114,7 +114,7 @@ h6 {
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center;
-  background-image: url("../../../../../img/card-bg.svg");
+  background-image: url("../img/card-bg.svg");
   background-repeat: no-repeat;
   -webkit-transition: all 0.2s;
   transition: all 0.2s;
@@ -197,7 +197,7 @@ h6 {
 }
 
 .card.active .card__header {
-  background-image: url("../../../../../img/card-bg-green.svg");
+  background-image: url("../img/card-bg-green.svg");
 }
 
 .card.active .card__header-btn span {

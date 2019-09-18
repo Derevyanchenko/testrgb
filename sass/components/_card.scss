@@ -31,7 +31,7 @@
         display: flex;
         align-items: center;
         justify-content: center;
-        background-image: url(/img/card-bg.svg);
+        background-image: url(../img/card-bg.svg);
         background-repeat: no-repeat;
         transition: all 0.2s;
         &-btn {
@@ -93,7 +93,7 @@
         box-shadow: 0px 20px 45px #81a809;
     }
     .card__header {
-        background-image: url(/img/card-bg-green.svg);   
+        background-image: url(../img/card-bg-green.svg);   
     }
     .card__header-btn span {
         transition: all 0.2s;
