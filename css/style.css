@@ -1,0 +1,217 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat:700|Roboto&display=swap");
+/*style*/
+
+* {
+  margin: 0;
+  padding: 0;
+  line-height: 1;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+li {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+button {
+  outline: none;
+  border: none;
+  display: block;
+  background: transparent;
+  cursor: pointer;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 16px;
+}
+
+input:focus {
+  outline: none;
+}
+
+body {
+  color: #666666;
+  font-size: 16px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 700;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.section__title {
+  font-size: 60px;
+  font-weight: 700;
+  letter-spacing: -3px;
+}
+
+.section__text {
+  font-size: 18px;
+  line-height: 34px;
+}
+
+.slick-slide {
+  outline: none;
+}
+
+.card {
+  max-width: 288px;
+  width: 100%;
+  background: #2a70e2;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+  cursor: pointer;
+  overflow: hidden;
+}
+
+.card:hover .card__header-btn {
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+  -webkit-transform: scale(1.05);
+  transform: scale(1.05);
+  -webkit-box-shadow: 0px 20px 45px #022b6f;
+  box-shadow: 0px 20px 45px #022b6f;
+}
+
+.card:hover:not(.active) .card__header-btn {
+  -webkit-box-shadow: 0px 20px 45px #022b6f;
+  box-shadow: 0px 20px 45px #022b6f;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+}
+
+.card:hover .card__header {
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+  -webkit-transform: scale(1.05);
+  transform: scale(1.05);
+}
+
+.card .card__header {
+  width: 100%;
+  height: 291px;
+  margin-bottom: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  background-image: url("../../../../../img/card-bg.svg");
+  background-repeat: no-repeat;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+}
+
+.card .card__header-btn {
+  width: 161px;
+  height: 161px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  border: 1px solid #3481FF;
+  -webkit-box-shadow: 0px 20px 45px #0040A9;
+  box-shadow: 0px 20px 45px #0040A9;
+  background: #2a70e2;
+  border-radius: 50%;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+}
+
+.card .card__header-btn span {
+  display: block;
+  height: 60px;
+  width: 12px;
+  background: #fff;
+  position: relative;
+  -webkit-transform: rotate(90deg);
+  transform: rotate(90deg);
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+}
+
+.card .card__header-btn span:before {
+  content: "";
+  display: block;
+  height: 60px;
+  width: 12px;
+  background: #fff;
+  -webkit-transform: rotate(90deg);
+  transform: rotate(90deg);
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+}
+
+.card .card__info {
+  text-align: center;
+  padding: 0 20px;
+  padding-bottom: 42px;
+}
+
+.card .card__info-btn {
+  color: #fff;
+  line-height: 1.5;
+  margin: auto;
+  margin-bottom: 8px;
+}
+
+.card .card__info-text {
+  color: #fff;
+  line-height: 1.5;
+}
+
+.card.active {
+  background: #81a809;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+}
+
+.card.active .card__header-btn {
+  background: #81a809;
+  border-color: #81a809;
+  -webkit-box-shadow: 0px 20px 45px #81a809;
+  box-shadow: 0px 20px 45px #81a809;
+}
+
+.card.active .card__header {
+  background-image: url("../../../../../img/card-bg-green.svg");
+}
+
+.card.active .card__header-btn span {
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+}
+
+.card.active .card__header-btn span:before {
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+  -webkit-transform: rotate(0deg);
+  transform: rotate(0deg);
+}
+
+.cards {
+  padding: 5em 0;
+}

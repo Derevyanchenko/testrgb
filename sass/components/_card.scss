@@ -1,0 +1,105 @@
+// card
+
+.card {
+    max-width: 288px;
+    width: 100%;
+    background: $blue;
+    transition: all 0.2s;
+    cursor: pointer;
+    overflow: hidden;
+    &:hover {
+        .card__header-btn {
+            transition: all 0.2s;
+            transform: scale(1.05);
+            box-shadow: 0px 20px 45px #77902a;
+        }
+        &:not(.active) {
+            .card__header-btn {
+                box-shadow: 0px 20px 45px #022b6f;
+                transition: all 0.2s;
+            }
+        }
+        .card__header {
+            transition: all 0.2s;
+            transform: scale(1.05);
+        }
+    }
+    .card__header {
+        width: 100%;
+        height: 291px;
+        margin-bottom: 40px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-image: url(/img/card-bg.svg);
+        background-repeat: no-repeat;
+        transition: all 0.2s;
+        &-btn {
+            width: 161px;
+            height: 161px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border: 1px solid #3481FF;
+            box-shadow: 0px 20px 45px #0040A9;
+            background: $blue;
+            border-radius: 50%;
+            transition: all 0.2s;
+            span {
+                display: block;
+                height: 60px;
+                width: 12px;
+                background: #fff;
+                position: relative;
+                transform: rotate(90deg);
+                transition: all 0.2s;
+                &:before {
+                    content: "";
+                    display: block;
+                    height: 60px;
+                    width: 12px;
+                    background: #fff;
+                    transform: rotate(90deg);
+                    transition: all 0.2s;
+                }
+            }
+        }
+    }
+
+    .card__info {
+        text-align: center;
+        padding: 0 20px;
+        padding-bottom: 42px;
+        &-btn {
+            color: #fff;
+            line-height: 1.5;
+            margin: auto;
+            margin-bottom: 8px;
+        }
+        &-text {
+            color: #fff;
+            line-height: 1.5;
+        }
+    }
+
+}
+
+.card.active {
+    background: $green;
+    transition: all 0.2s;
+    .card__header-btn {
+        background: #81a809;
+        border-color: #81a809;
+        box-shadow: 0px 20px 45px #81a809;
+    }
+    .card__header {
+        background-image: url(/img/card-bg-green.svg);   
+    }
+    .card__header-btn span {
+        transition: all 0.2s;
+        &:before {
+            transition: all 0.2s;
+            transform: rotate(0deg);
+        }
+    }
+}
